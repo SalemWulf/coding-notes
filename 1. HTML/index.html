@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Opera Snapshot_2022-10-17_113843_www.tumpik.com.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/5847f5bdcef1014c0b5e489c.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+    <title>HTML Practice Site</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/5847f5bdcef1014c0b5e489c.png" alt="Logo" width="100" height="100"
+                            class="d-inline-block align-text-top">
+                    </a>
+                </div>
+            </nav>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#basics">HTML Basics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tag">HTML Tags</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#text">Text</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#links">Hyperlinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lists">Lists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tables">Tables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#div">Divs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Forms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inline">Inline & Block</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#images">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#entities">HTML Entities</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body">
+        <div class="h1div" id="basics">
+            <h1>HTML Basics</h1>
+        </div>
+        <p>HTML is a markup language and is the basics all websites are made of. This is usually the physical part we
+            see
+            when interacting with a website. HTML stands for Hyper Text Markup Language. HTML is the standard markup
+            language for creating web pages. HTML is used to describe the structure of a web page and should generally
+            never
+            be used for styling.
+        </p>
+        <h2>Doctype</h2>
+        <p>At the top of every page there should be a DOCTYPE tag which lets the browser know you're using HTML 5, it
+            should
+            be the first line of code and is generated after typing a <strong>!</strong> and hitting enter in VS Code.
+        </p>
+        <h2>Title</h2>
+        <p>The title tag resides in the head of the HTML file and controls the name you see in the browser.</p>
+        <img src="images/Opera Snapshot_2022-11-29_091426_www.google.com.png" alt="">
+        <h2>Favicon </h2>
+        <p>To go with a title a favicon is usually needed and is the name of the little image that can be seen in a
+            brower.
+            The syntax is <strong>
+                < link> rel="icon" href = "Your Image" < / link>
+            </strong>.
+            The favicon goes in the head, usually above the title tag.</p>
+        <h2>Meta</h2>
+        <p>A meta tag often describes your website,the important ones are naturally provided in HTML Boilerplate. Less
+            vital
+            ones contibute to SEO and
+            optimize your website for browser searching.</p>
+        <h2>Comments</h2>
+        <p>You can add comments to an HTML page which make it so that text and tags within the comment aren't picked up
+            by
+            the browser. Use to a minimum. a comment is text enclosed within <strong>
+                < !-- ╌>
+            </strong>. Text should be green or another color
+            to show it's working. These comments can be used to leave notes to yourself or other developers, or even to
+            organize and label code.</p>
+        <img src="images/Opera Snapshot_2022-11-29_092542_www.w3schools.com.png" alt="">
+        <h2>HTML Boilerplate</h2>
+        <p>Boilerplate is simply a template for code that makes it easier to write without needing to remember
+            everything.
+            HTML generally has a specific template that goes at the start of every
+            webpage. In VS Code simply type a <strong>!</strong> to get it.</p>
+        <img src="images/Opera Snapshot_2022-11-29_092758_www.google.com.png" alt="">
+        <h2>Index.html</h2>
+        <p>Index.html should be the file name for the main page on your website that you wish for users to open up
+            first. If
+            it isn't there may be problems when attempting to upload it to the internet, any extra HTML files don't need
+            to
+            follow any naming conventions. Just the main one.</p>
+        <h2>Links</h2>
+        <p>If you wish to link to other files or import frameworks to an HTML file the link tag is generally what you'll
+            use, even favicons use them as well as importing fonts or bootstrap. Links aren't seen in the browser so
+            they go
+            in the head of the HTML file. The syntax is <strong>
+                < link link rel="" href="" </ link>
+            </strong> What goes in the rel and href quotes depends on what you're specifically doing. They also
+            sometimes
+            change places with eachother.</p>
+        <h2>Head</h2>
+        <p>The head is where all the previously discussed tags should go,meta, title, links, they are unseen in the
+            actual
+            webpage as all head elements are. the head section is marked by the head tag</p>
+        <h2>Body</h2>
+        <p>The body is where all the elements the user will see goes such as text and images, this is marked by a body
+            tag.
+            Both the head and body tags are encased in an HTML tag.</p>
+        <div class="h1div" id="tag">
+            <h1>HTML Tags</h1>
+        </div>
+        <h2>Tag Syntax</h2>
+        <p>Tags in HTML have a syntax and they have to be a certain way in order for the browser browser to recognize
+            them
+            and convert them into elements the user can see and interact with.</p>
+        <h2>Start Tags, End Tags</h2>
+        <p>Most HTML elements have start and end tags. Start tags look like <strong>
+                < p>.
+            </strong> Two angles enclosing an HTMl element. The
+            end tags look like the same thing with a / coming first. <strong>
+                < / p>
+            </strong> Everything in between them will be edited to that
+            specific tag. The letter or name within the angles is the element itself, with the angles it's a tag.</p>
+        <h2>Self Closing Tags</h2>
+        <p>Self closing tags don't need an end tag for they don't edit text or contain anything within them. <strong>
+                < br>
+            </strong> and <strong>
+                < hr>
+            </strong> are both self closing tags.</p>
+        <h2>br Tag</h2>
+        <p>the br tag is an example of a self closing tag,<br> it shouldn't be used often <br> but it seperates text and
+            breaks up lines like it does here.</p>
+        <h2>hr Tag</h2>
+        <p>the hr element stands for horizontal rule and makes a line that reaches across the whole page, can be edited
+            to
+            be more noticable and can be
+            used to split up a webpage or divide sections.</p>
+        <hr>
+        <h2>Attributes</h2>
+        <p>All HTML elements can have attributes, these provide additional information about elemenets, they are always
+            specified in the start tag and come with the following syntax. <strong>
+                < attribute="value" element>
+            </strong> </p>
+        <p>the <strong>href</strong> attribute specifies a link and where it goes to</p>
+        <p>The <strong>src</strong> attribute is often used with the <strong>img</strong> element and specifies the path
+            to
+            the image being displayed.</p>
+        <p>The <strong>alt</strong> attribute provides alternate text if an image or element doesn't show up, often used
+            for
+            an image tag and has more to do with SEO.</p>
+        <p>the <strong>style</strong> attribute can be added to an element to give it styles, it's deprecated though and
+            should never be used in HTML.</p>
+        <p>the <strong>lang</strong> attribute is used as an attribute for the html tag and specifies the language,
+            included
+            in boilerplate.</p>
+        <h2>Title Attribute </h2>
+        <p>The title attribute can be added to an element so it's information can be showed when you mouseover an
+            element It
+            is often used for abbreviations or images.
+        </p>
+        <p title="This is a demonstration of a title attribute."> <strong> Title attribute test!</strong></p>
+        <div class="h1div" id="text">
+            <h1>Text</h1>
+        </div>
+        <h2>Headings 1 - 6</h2>
+        <p>headings are used to establish hierarchy in a webpage, their fonts and height can be changed but they more so
+            convey what is the most important text. Every webpage should have an H1. They start at h1 and go to h6 from
+            largest to smallest.</p>
+        <h1>H1 Heading</h1>
+        <h2>H2 Heading</h2>
+        <h3>H3 Heading</h3>
+        <h4>H4 Heading</h4>
+        <h5>H5 Heading</h5>
+        <h6>H6 Heading</h6>
+        <h2>Paragraphs</h2>
+        <p>Paragraphs can be made with the P tag, paragraphs keep other text away from them. Paragraphs always start on
+            a
+            different line.</p>
+        <h2>Lorem </h2>
+        <p><strong>Lorem Ipsum</strong> is blank text, a mix of latin and english which is often used as a placeholder
+            for
+            text, perfect for
+            website drafts. You can also write how many words you want with it by writing Lorem followed by a number
+            like
+            <strong>Lorem10</strong> or <strong>Lorem34</strong> Hit enter afterwards.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, molestiae.</p>
+        <h2>Formatting text</h2>
+        <p>Text can be formatted with HTML tags, simply wrap text in it to change it's style. These can be used in CSS
+            to
+            select text for editing. </p>
+        <p><b>b tag = bold text</b></p>
+        <p><strong>strong tag = important text/bold</strong></p>
+        <p><i>i tag = italic text</i></p>
+        <p><em>em tag = emphasized text</em></p>
+        <p><mark> mark tag = marked text</mark></p>
+        <p><small>small tag = smaller text</small></p>
+        <p><del>del tag = deleted text</del></p>
+        <p><ins>ins tag = inserted text</ins></p>
+        <p><sub>sub tag = subscript text</sub></p>
+        <p><sup> sup tag = superscript text</sup></p>
+
+        <div class="h1div" id="links">
+            <h1>Hyperlinks</h1>
+        </div>
+        <h2>a tag </h2>
+        <p>an <strong>a</strong> tag is the HTML element responsible for links to other websites.</p>
+        <a href="getbootstrap.com">Link to getbootstrap.com</a>
+        <p>a tags can also link to other pages on your websites, this is how large website are made, just a bunch pages
+            linked together.</p>
+        <a href="images/number2.html">Link to another HTML Page</a>
+        <h2>/</h2>
+        <p>Be aware if you link to another page or image within a folder it must have the folder name followed by a /
+            like
+            <strong>"folderName/ fileName"</strong></p>
+        <h2>Image Links</h2>
+        <p>You can turn images into links too</p>
+        <a href="getbootstrap.com"><img src="images/Opera Snapshot_2022-11-29_110910_getbootstrap.com.png" alt=""></a>
+        <h2>Buttons</h2>
+        <p>Buttons can be turned into links too!</p>
+        <a href="yahoo.com"><button> To Yahoo.com</button></a>
+        <h2>Target</h2>
+        <p>When you click on a link it sometimes brings you to another website or changes the page you're on to that
+            website. To make it the former use the target attribute.</p>
+        <a href="google.com">No target attribute</a>
+        <a href="google.com" target="_blank">Target attribute</a>
+        <div class="h1div" id="lists">
+            <h1>Lists</h1>
+        </div>
+
+        <h2>Ordered Lists</h2>
+        <p>Data can be organized into lists, one of these can be ordered lists which means its numbered.</p>
+        <p>ordered lists can be made with the <strong>ol</strong> tag.</p>
+        <p>within every list no matter if its an ordered or unordered list the list items themselves are made with
+            <strong>li</strong> tags which stands for list item.</p>
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+        <h2>Unordered Lists</h2>
+        <p>An unordered list is just like an ordered list except with bullet points instead of numbers</p>
+        <p>unordered lists are made with the <strong>ul</strong> tag.</p>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+        <div class="h1div" id="tables">
+            <h1>Tables</h1>
+        </div>
+        <h2>Basic Table</h2>
+        <p>Tables are a way to organize data on a website into rows and columns</p>
+        <p>the <strong>table</strong> tag encloses the entire table</p>
+        <p>the <strong>tr</strong> tag stands for table row and represents the rows in a table, table cells go within
+            these
+            just like li</p>
+        <p>the <strong>td</strong> tag stands for table data and acts like a table cell that goes within a tr tag.</p>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+        <div class="h1div" id="div">
+            <h1>Divs</h1>
+        </div>
+        <h2>Divs</h2>
+        <p>These can be used to make sections of a website. They are invisible unless edited to have a background color
+            or
+            filled in with elements. </p>
+        <div>
+            <p>if you type a period folled by a name and you can give a div a class automatically </p>
+        </div>
+        <div class="divname"></div>
+        <h2>Sections</h2>
+        <p>You may want to add more sections than just the div so it communicates the purpose of the section easier to
+            others viewing your code or yourself. These
+            don't have to be followed perfectly but they can be useful.</p>
+        <section>
+            <p><strong>Section</strong> use for neutral sections on your website.</p>
+        </section>
+        <nav>
+            <p><strong>Nav</strong> Use for a navbar on your website.</p>
+        </nav>
+        <main>
+            <p><strong>Main</strong> use the main sections of your website.</p>
+        </main>
+        <footer>
+            <p><strong>Footer</strong> use for the footer of your website.</p>
+        </footer>
+        <article>
+            <p><strong>Article</strong> use for a block of text on your website.</p>
+        </article>
+        <header>
+            <p><strong>Header</strong> use for the header of your website.</p>
+        </header>
+        <aside>
+            <p><strong>Aside</strong> use for a side section of your website.</p>
+        </aside>
+        <details>
+            <p><strong>Details</strong> this can be used for the details of your website, lesser used.</p>
+        </details>
+
+
+
+        <div class="h1div" id="form">
+            <h1>Forms</h1>
+        </div>
+        <h2>Forms </h2>
+        <p>Forms can be used to collect data from users, sign them in, make accounts, or allow them to interact with
+            your
+            website.</p>
+        <form action="post">
+            <label for="">Text Box:</label>
+            <input type="text" placeholder="Text here"><br>
+            <label for="">Button:</label>
+            <input type="button"><br>
+            <label for="">Checkboxes</label>
+            <input type="checkbox">
+            <input type="checkbox"><br>
+            <label for="">Color Picker</label>
+            <input type="color"><br>
+            <label for="">Date</label>
+            <input type="date"><br>
+            <label for="">Date plus time</label>
+            <input type="datetime-local"><br>
+            <label for="">Email</label>
+            <input type="email"><br>
+            <label for="">Submit a file</label>
+            <input type="file"><br>
+            <label for="">Number</label>
+            <input type="number"><br>
+            <label for="">Password </label>
+            <input type="password"><br>
+            <label for="">Radio button</label>
+            <input type="radio"><br>
+            <label for="">Range</label>
+            <input type="range"><br>
+            <label for="">This resets the form data</label>
+            <input type="reset"><br>
+            <label for="">Sumbit button</label>
+            <input type="submit"><br>
+            <label for="">Time selector</label>
+            <input type="time"><br>
+        </form>
+        <div class="h1div" id="inline">
+            <h1>Inline & Block</h1>
+        </div>
+        <h2>Block Elements</h2>
+        <p><strong>Block Elements</strong> always start on a new line, they always take the full width available. the
+            <strong>p</strong> tag and <strong>div</strong> tag
+            are
+            block
+            elements.</p>
+        <h2>Inline elements</h2>
+        <p><strong>inline</strong> elements do not start on a new line, they only take up as much width as necessary.
+            <strong>img</strong> tags, <strong>a</strong> tags,
+            and
+            <strong>button</strong> tags are inline. </p>
+        <div class="h1div" id="images">
+            <h1>Images</h1>
+        </div>
+        <h2>Images</h2>
+        <p>Images are easily implimented with the <strong>img</strong> tag.</p>
+        <img src="images/Opera Snapshot_2022-11-30_134013_www.google.com.png" alt="html logo">
+        <h2>Alt tag</h2>
+        <p>The <strong>alt</strong> attribute shows up in the <strong>img</strong> tag. Its used to describe an image.
+            It's
+            used for SEO most often and its name will show up when an image of yours doesn't load to describe it to the
+            user.</p>
+
+
+        <div class="h1div" id="entities">
+            <h1>HTML Entities</h1>
+        </div>
+        <p>Some characters are reserved in HTML or hard to write out such as the < or> signs in text, they might be
+                confused
+                for
+                code. These entitty codes take the place of these symbols and show up in the browser and your code just
+                fine
+        </p>
+        <p>
+            <strong>less than &lt;</strong> </p>
+        <p><strong> greater than &gt;</strong></p>
+        <p><strong>ampersand &amp;</strong></p>
+        <p><strong>double quotation mark &quot;</strong></p>
+        <p><strong>single quotation mark (apostrophe) &apos;</strong></p>
+        <p><strong>cent &cent;</strong></p>
+        <p><strong>pound &pound;</strong></p>
+        <p><strong> yen &yen;</strong></p>
+        <p><strong>euro &euro;</strong></p>
+        <p><strong>copyright &copy;</strong></p>
+        <p><strong>registered trademark &reg;</strong></p>
+    </div>
+
+    <footer>
+        <div class="h1div">
+            <h1 class="footer">Other Projects</h1>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
